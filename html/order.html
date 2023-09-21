@@ -47,7 +47,9 @@
       var check_login = localStorage.getItem("userEmail");
       if(check_login == null){
         document.getElementById("what-to-show").textContent = 'Log In'
-      } 
+      }else{
+        document.getElementById("what-to-show").textContent = 'Log Out'
+      }
   };
 
   </script>
@@ -86,7 +88,7 @@
                     <a class="nav-link" href="./cart.html">Cart</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" id="what-to-show" href="#" onclick="logoutPopup()">Log Out</a>
+                    <a class="nav-link" id="what-to-show" href="#" onclick="logoutPopup()">Checking...</a>
                   </li>
                 </ul>
               </div>
