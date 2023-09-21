@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&display=swap');
+@import url('variables.css');
+
+*{
+    font-family: 'Alkatra', cursive;
+}
+
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* css for heading part */
+.header .nav-bar .navbar .container-fluid .navbar-brand img{
+    height: 100px;
+}
+
+.header .nav-bar .navbar .container-fluid .navbar-brand{
+    padding: 0 2rem 0 1rem;
+}
+
+.header .nav-bar .navbar{
+    padding: 1rem;
+}
+
+.navbar-nav .nav-item .active{
+    color: var(--ruet-theme-color);
+}
+
+.navbar-nav .nav-item .nav-link:hover{
+    color: var(--ruet-theme-color);
+}
+
+.fun{
+    font-size: xx-large;
+}
+
+
+.scoreboard {
+    background-color: grey;
+    height: 18vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-top: 10px;
+  }
+  
+  .content {
+    text-align: center;
+    align-items: space-around;
+    width: 100%;
+    max-width: 120rem;
+    margin: 12rem auto;
+    padding: 0 2rem;
+  }
+  
+  .column-header {
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    padding: 10px;
+  }
+  
+  .tab-content {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  .tab-item {
+    margin-bottom: 5px;
+    font-size: large;
+  }
+  
+  #lunch-button {
+    background-color: #fed330;
+    color: black;
+    border: 1px solid black;
+    font-weight: bolder;
+    padding: 1rem 0;
+    letter-spacing: 0.2rem;
+  }
+  
+  #dinner-button {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    font-weight: bolder;
+    padding: 1rem 0;
+    letter-spacing: 0.2rem;
+  }
+  .tab-content .text-center img {
+    margin-bottom: 10px; /* Add desired bottom margin */
+  }
+  
+  @media (max-width: 767px) {
+    .column-header {
+      text-transform: capitalize;
+    }
+  }
+
+  .space {
+    height: 20px; /* 10px top/bottom margin, 20px right/left margin */
+  }
+
+
+
+  #lunch-button {
+
+    background-color: rgba(63, 99, 183, 0.689);
+    color: white;
+    border: none;
+    font-weight: bolder;
+    padding: 1rem 0;
+    border: 1px solid black;
+ 
+}
+
+#lunch-button:hover {
+    background-color: rgba(63, 99, 183, 0.689);
+    color: white;
+    border: none;
+    font-weight: bolder;
+    padding: 1rem 0;
+    border: 1px solid rgb(227, 43, 184);
+}
+
+#lunch-button:focus {
+    background-color: rgba(63, 99, 183, 0.689);
+    color: white;
+    border: none;
+    font-weight: bolder;
+    padding: 1rem 0;
+   
+}
+
+#dinner-button{
+    background-color: white;
+    color: black;
+    border: none;
+    font-weight: bolder;
+    padding: 1rem 0;
+    border: 1px solid black;
+    /* font-size: xx-large; */
+}
+
+#dinner-button:hover {
+    background-color: rgba(63, 99, 183, 0.689);
+    color: white;
+    border: none;
+    font-weight: bolder;
+    padding: 1rem 0;
+    border: 1px solid rgb(227, 43, 184);
+    /* font-size: xx-large; */
+}
+
+#dinner-button:focus {
+    background-color: rgba(63, 99, 183, 0.689);
+    color: white;
+    border: none;
+    font-weight: bolder;
+    padding: 1rem 0;
+    
+    /* font-size: xx-large; */
+}
+
+
+#show-date-in-history-page{
+  font-size: 40px;
+  height: 100px;
+  background-color: rgb(237, 146, 146);  
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  border: 2px solid red; /* Change the color and thickness as needed */
+  padding: 10px;
+}
+
+
+.item-name {
+  font-weight: bold;
+}
+
+.item-quantity {
+  margin-left: auto;
+}
+
+
+.gap{
+  margin: 5px;
+}
+
+.space {
+  height: 20px; /* 10px top/bottom margin, 20px right/left margin */
+}

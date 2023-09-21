@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&display=swap');
+@import url('variables.css');
+
+*{
+    font-family: 'Alkatra', cursive;
+}
+
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* css for heading part */
+.header .nav-bar .navbar .container-fluid .navbar-brand img{
+    height: 100px;
+}
+
+.header .nav-bar .navbar .container-fluid .navbar-brand{
+    padding: 0 2rem 0 1rem;
+}
+
+.header .nav-bar .navbar{
+    padding: 1rem;
+}
+
+.navbar-nav .nav-item .active{
+    color: var(--ruet-theme-color);
+}
+
+.navbar-nav .nav-item .nav-link:hover{
+    color: var(--ruet-theme-color);
+}
+
+.fun{
+    font-size: xx-large;
+}
+
+
+
+
+
+
+
+
+.cart {
+    margin: 20px;
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    border: 2px solid red;
+    padding: 10px;
+  }
+
+
+  .item-name {
+    font-weight: bold;
+  }
+
+  .item-price {
+    margin-left: auto;
+  }
+
+  .total {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+  .delete-icon {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+
+  #qrcode svg {
+    width: 300px;
+    height: 300px;
+  }
+
+  .space {
+    height: 20px; /* 10px top/bottom margin, 20px right/left margin */
+  }
+
+
+  
+
+ 

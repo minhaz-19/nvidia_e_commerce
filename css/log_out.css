@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&display=swap');
+@import url('variables.css');
+
+*{
+    font-family: 'Alkatra', cursive;
+}
+
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* css for heading part */
+.header .nav-bar .navbar .container-fluid .navbar-brand img{
+    height: 50px;
+}
+
+.header .nav-bar .navbar .container-fluid .navbar-brand{
+    padding: 0 2rem 0 1rem;
+}
+
+.header .nav-bar .navbar{
+    padding: 1rem;
+}
+
+.navbar-nav .nav-item .active{
+    color: var(--ruet-theme-color);
+}
+
+.navbar-nav .nav-item .nav-link:hover{
+    color: var(--ruet-theme-color);
+}
+
+.fun{
+    font-size: xx-large;
+}
+
+
+
+
+
+
+
+.body {
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+
+
+
+  

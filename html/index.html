@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="../css/index.css" />
+  <title>Log In</title>
+</head>
+
+<body>
+  <div class="login-wrap">
+    <div class="login-html">
+      <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+      <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+      <div class="login-form">
+        <div class="sign-in-htm">
+          <div class="group">
+            <label for="loginEmail" class="label">Email</label>
+            <input id="loginEmail" type="text" class="input">
+          </div>
+          <div class="group">
+            <label for="loginPassword" class="label">Password</label>
+            <input id="loginPassword" type="password" class="input" data-type="password">
+          </div>
+          <div class="group">
+            <input id="check" type="checkbox" class="check" checked>
+            <label for="check"><span class="icon"></span> Keep me Signed in</label>
+          </div>
+          <div class="group">
+            <input type="submit" class="button" id="loginButton" value="Sign In">
+          </div>
+          <div class="hr"></div>
+          <div class="foot-lnk">
+            <a href="#forgot">Forgot Password?</a>
+          </div>
+        </div>
+        <div class="sign-up-htm">
+          <div class="group">
+            <label for="signUpUserName" class="label">Username</label>
+            <input id="signUpUserName" type="text" class="input">
+          </div>
+          <div class="group">
+            <label for="signUpPassword" class="label">Password</label>
+            <input id="signUpPassword" type="password" class="input" data-type="password">
+          </div>
+          <div class="group">
+            <label for="signUpPassword2" class="label">Repeat Password</label>
+            <input id="signUpPassword2" type="password" class="input" data-type="password">
+          </div>
+          <div class="group">
+            <label for="signUpEmail" class="label">Email Address</label>
+            <input id="signUpEmail" type="text" class="input">
+          </div>
+          <div class="group">
+            <input type="submit" class="button" id="signUpSubmitButton" value="Sign Up">
+          </div>
+          <div class="hr"></div>
+          <div class="foot-lnk">
+            <label for="tab-1">Already Member?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="bundle.js"></script>
+    <script type="module" src="../js/login.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+</body>
+
+</html>

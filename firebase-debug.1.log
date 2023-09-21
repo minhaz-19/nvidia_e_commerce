@@ -1,0 +1,82 @@
+[debug] [2023-06-23T12:36:51.476Z] ----------------------------------------------------------------------
+[debug] [2023-06-23T12:36:51.478Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Minhaz\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2023-06-23T12:36:51.478Z] CLI Version:   12.4.0
+[debug] [2023-06-23T12:36:51.479Z] Platform:      win32
+[debug] [2023-06-23T12:36:51.479Z] Node Version:  v18.15.0
+[debug] [2023-06-23T12:36:51.480Z] Time:          Fri Jun 23 2023 18:36:51 GMT+0600 (Bangladesh Standard Time)
+[debug] [2023-06-23T12:36:51.480Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-23T12:36:51.547Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-23T12:36:51.547Z] > authorizing via signed-in user (minhaz7553@gmail.com)
+[debug] [2023-06-23T12:36:51.547Z] [iam] checking project ruet-dining-management for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-06-23T12:36:51.549Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ruet-dining-management:testIamPermissions [none]
+[debug] [2023-06-23T12:36:51.549Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ruet-dining-management:testIamPermissions x-goog-quota-user=projects/ruet-dining-management
+[debug] [2023-06-23T12:36:51.550Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ruet-dining-management:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-06-23T12:36:53.325Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ruet-dining-management:testIamPermissions 200
+[debug] [2023-06-23T12:36:53.326Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ruet-dining-management:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-06-23T12:36:53.327Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ruet-dining-management [none]
+[debug] [2023-06-23T12:36:54.424Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ruet-dining-management 200
+[debug] [2023-06-23T12:36:54.424Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ruet-dining-management {"projectId":"ruet-dining-management","projectNumber":"269174171595","displayName":"RUET Dining Management","name":"projects/ruet-dining-management","resources":{"hostingSite":"ruet-dining-management","storageBucket":"ruet-dining-management.appspot.com","locationId":"asia-south1"},"state":"ACTIVE","etag":"1_9e90f8cc-c534-4ec7-9d6e-4ea38a016613"}
+[info] 
+[info] === Deploying to 'ruet-dining-management'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2023-06-23T12:36:54.432Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/ruet-dining-management/versions [none]
+[debug] [2023-06-23T12:36:54.432Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/ruet-dining-management/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2023-06-23T12:36:56.284Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/ruet-dining-management/versions 200
+[debug] [2023-06-23T12:36:56.284Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/ruet-dining-management/versions {"name":"projects/269174171595/sites/ruet-dining-management/versions/aac47018e941f9ce","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[ruet-dining-management]: beginning deploy... 
+[debug] [2023-06-23T12:36:56.683Z] Error: EPERM: operation not permitted, scandir 'E:/personal/ruet_dining/firebase-debug.log'
+    at Object.readdirSync (node:fs:1452:3)
+    at GlobSync._readdir (C:\Users\Minhaz\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:288:46)
+    at GlobSync._readdirInGlobStar (C:\Users\Minhaz\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:245:17)
+    at GlobSync._readdir (C:\Users\Minhaz\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:276:17)
+    at GlobSync._processReaddir (C:\Users\Minhaz\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:137:22)
+    at GlobSync._process (C:\Users\Minhaz\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:132:10)
+    at GlobSync._processGlobStar (C:\Users\Minhaz\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:380:10)
+    at GlobSync._process (C:\Users\Minhaz\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:130:10)
+    at new GlobSync (C:\Users\Minhaz\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:45:10)
+    at globSync (C:\Users\Minhaz\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:23:10)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-06-23T12:37:14.571Z] ----------------------------------------------------------------------
+[debug] [2023-06-23T12:37:14.573Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Minhaz\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2023-06-23T12:37:14.573Z] CLI Version:   12.4.0
+[debug] [2023-06-23T12:37:14.574Z] Platform:      win32
+[debug] [2023-06-23T12:37:14.574Z] Node Version:  v18.15.0
+[debug] [2023-06-23T12:37:14.575Z] Time:          Fri Jun 23 2023 18:37:14 GMT+0600 (Bangladesh Standard Time)
+[debug] [2023-06-23T12:37:14.575Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-23T12:37:14.637Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-23T12:37:14.638Z] > authorizing via signed-in user (minhaz7553@gmail.com)
+[debug] [2023-06-23T12:37:14.638Z] [iam] checking project ruet-dining-management for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-06-23T12:37:14.640Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ruet-dining-management:testIamPermissions [none]
+[debug] [2023-06-23T12:37:14.640Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ruet-dining-management:testIamPermissions x-goog-quota-user=projects/ruet-dining-management
+[debug] [2023-06-23T12:37:14.640Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ruet-dining-management:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-06-23T12:37:16.283Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ruet-dining-management:testIamPermissions 200
+[debug] [2023-06-23T12:37:16.283Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ruet-dining-management:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-06-23T12:37:16.284Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ruet-dining-management [none]
+[debug] [2023-06-23T12:37:17.298Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ruet-dining-management 200
+[debug] [2023-06-23T12:37:17.298Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ruet-dining-management {"projectId":"ruet-dining-management","projectNumber":"269174171595","displayName":"RUET Dining Management","name":"projects/ruet-dining-management","resources":{"hostingSite":"ruet-dining-management","storageBucket":"ruet-dining-management.appspot.com","locationId":"asia-south1"},"state":"ACTIVE","etag":"1_9e90f8cc-c534-4ec7-9d6e-4ea38a016613"}
+[info] 
+[info] === Deploying to 'ruet-dining-management'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2023-06-23T12:37:17.306Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/ruet-dining-management/versions [none]
+[debug] [2023-06-23T12:37:17.307Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/ruet-dining-management/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2023-06-23T12:37:18.899Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/ruet-dining-management/versions 200
+[debug] [2023-06-23T12:37:18.899Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/ruet-dining-management/versions {"name":"projects/269174171595/sites/ruet-dining-management/versions/38e6510e8ffb49e0","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[ruet-dining-management]: beginning deploy... 
+[debug] [2023-06-23T12:37:19.321Z] Error: EPERM: operation not permitted, scandir 'E:/personal/ruet_dining/firebase-debug.log'
+    at Object.readdirSync (node:fs:1452:3)
+    at GlobSync._readdir (C:\Users\Minhaz\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:288:46)
+    at GlobSync._readdirInGlobStar (C:\Users\Minhaz\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:245:17)
+    at GlobSync._readdir (C:\Users\Minhaz\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:276:17)
+    at GlobSync._processReaddir (C:\Users\Minhaz\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:137:22)
+    at GlobSync._process (C:\Users\Minhaz\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:132:10)
+    at GlobSync._processGlobStar (C:\Users\Minhaz\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:380:10)
+    at GlobSync._process (C:\Users\Minhaz\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:130:10)
+    at new GlobSync (C:\Users\Minhaz\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:45:10)
+    at globSync (C:\Users\Minhaz\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:23:10)
+[error] 
+[error] Error: An unexpected error has occurred.

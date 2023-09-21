@@ -1,0 +1,76 @@
+
+html, body{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+:root{
+    --primary-color: #4458dc;
+    --primary-color2: #854fee;
+    --title-color: #141313;
+    --text-color: #777777;  
+    --border-color: #201f1f17;  
+    --gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    --ruet-theme-color: rgb(255, 0, 187);
+} 
+
+  /* css for log out functionality */
+
+  #logout-popup-content {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 500px;
+    margin: 5vh auto 0;
+    text-align: center;
+    border-radius: 3%;
+    
+  }
+
+#logout-popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+  }
+
+#close-logout-item-popup{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    font-weight: bolder;
+    padding: 1rem 0;
+}
+
+#close-logout-item-popup:hover{
+    background-color: white;
+    border: 1px solid red;
+    color: red;
+}
+
+
+#submit-logout-item-popup{
+    background-color: rgb(31, 89, 170);
+    opacity: 60%;
+    color: rgb(200, 229, 32);
+    border: none;
+    font-weight: bolder;
+    padding: 1rem 0;
+}
+
+#submit-logout-item-popup:hover{
+    background-color: rgb(31, 89, 170);
+    opacity: 60%;
+    color: white;
+    border: none;
+    font-weight: bolder;
+    padding: 1rem 0;
+}
