@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('variables.css');
 
 *{
-    font-family: 'Alkatra', cursive;
+    font-family: 'Alkatra', cursive,'Noto Sans JP', sans-serif;
 }
 
 .container-fluid{
@@ -30,6 +32,10 @@
 
 .navbar-nav .nav-item .nav-link:hover{
     color: var(--ruet-theme-color);
+}
+
+.navbar-nav .nav-item .nav-link{
+    font-family: 'Poppins', sans-serif;
 }
 
 .fun{

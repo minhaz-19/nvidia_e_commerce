@@ -1004,7 +1004,7 @@ function order_details(){
 if(document.title == 'Log In'){
   loginPage();
 }
-else if(document.title == 'Nvidia E-Commerce'){
+else if(document.title == 'XYZ Shoes'){
   orderPage();
 }
 else if(document.title == 'Cart'){

@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 :root {
   --yellow: #ef2bd1;
   --red: #e74c3e;
@@ -9,7 +11,7 @@
 }
 
 * {
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", sans-serif, 'Noto Sans JP';
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -200,5 +202,7 @@ html {
 }
 
 
-
+.navbar-nav .nav-item .nav-link{
+  font-family: 'Poppins', sans-serif;
+}
 
