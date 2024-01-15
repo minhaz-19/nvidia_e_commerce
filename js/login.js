@@ -28,7 +28,7 @@ const storage = getStorage();
 const auth = getAuth();
 var docRef;
 var userEmail;
-const admin_emails=['mahfuj@gmail.com'];
+const admin_emails=['tamanna@gmail.com'];
 
 
 
